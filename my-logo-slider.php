@@ -27,6 +27,12 @@ class mls_widget extends WP_Widget
     public function __construct()
     {
         // Basic widget details
+	    $widget_details = array(
+		'classname' => 'mls_widget',
+		'description' => 'Creates a logo slider.'
+);
+
+parent::__construct( 'mls_widget', 'Logo Slider Widget', $widget_details );
     }
 
     public function widget( $args, $instance )
